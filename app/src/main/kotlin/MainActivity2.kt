@@ -18,7 +18,6 @@ public class MainActivity2 : ActionBarActivity() {
 
         val book2 = Book2("12345", 45.0f, 5, "", "")
         book2.description = "desc";
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
