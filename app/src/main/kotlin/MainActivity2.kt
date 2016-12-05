@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main_activity2.*
 
 
@@ -18,6 +19,8 @@ public class MainActivity2 : ActionBarActivity() {
 
         val book2 = Book2("12345", 45.0f, 5, "", "")
         book2.description = "desc";
+
+        maintextview.setOnClickListener({ view -> Toast.makeText(this, "Showing Toast", Toast.LENGTH_SHORT).show(); })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
