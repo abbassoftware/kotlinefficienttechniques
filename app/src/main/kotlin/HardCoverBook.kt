@@ -1,9 +1,9 @@
 
 package com.kotlineffiecienttechniques
 
-class HardCoverBook(aISBN: String,aprice: Float,aquantity: Int,
-                    atitle: String , adescription: String) :
-        Book(aISBN,aprice,aquantity,atitle,adescription) {
+class HardCoverBook(ISBN: String, price: Float, quantity: Int,
+                    title: String , description: String) :
+        Book(ISBN, price, quantity, title, description) {
 
     override fun getShippingPrice():Float {
         return price + 3.0f;
